@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tilt Exploration</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <h1 class="card-title">My Card</h1>
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".card-container"),{
+        speed:1500,
+        easing:"cubic-bezier(.03,.98,.52,.99)",
+        glare:true,
+        "max-glare":.4,
+        scale:1.2,
+        perspective:700
+
+      });
+
+      // VanillaTilt.init(document.querySelector(".card-title"));
+
+    </script>
+
+
+  </body>
+</html>
